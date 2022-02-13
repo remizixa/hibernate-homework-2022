@@ -28,7 +28,7 @@ public class GenericDao {
     getSession().save(object);
   }
 
-  protected Session getSession() {
+  public Session getSession() {
     return sessionFactory.getCurrentSession();
   }
 
